@@ -1,0 +1,39 @@
+1. Show basic command
+time docker run ubuntu ls
+docker run -i -t ubuntu /bin/bash
+docker ps -a
+docker top 3e75cc9bc2fb
+
+2. Destroy filesystem
+docker run -i -t ubuntu /bin/bash
+BE CAREFUL!!! rm -rf /bin
+ls 
+exit
+create new container
+ls
+docker diff 
+docker commit 
+docker push 
+
+3. Show Docker Desktop with android
+docker run -d preznik/android
+docker inspect c04ff1f35ee1 |grep IPAddress
+ssh -XC docker@hostIP 
+firefox
+./adt..../eclipse/eclipse
+
+4. Start jenkins container and talk about ports and configuration in git
+docker run -d -p 8080 -v `pwd`/jenkins_home:/var/jenkins_home preznik/jenkins
+docker ps
+localhost:49153
+
+5. multi image build
+
+6. Show perl testing in multiple containers
+cd ~/bng-cwi
+./test_Perl.sh
+
+
+
+#Delete old containers
+ sudo docker ps -a |grep Exit | awk '{print $1}' | xargs sudo docker rm

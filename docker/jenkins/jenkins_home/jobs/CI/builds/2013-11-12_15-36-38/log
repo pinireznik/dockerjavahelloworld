@@ -1,0 +1,22 @@
+Started by an SCM change
+Building on master in workspace /var/jenkins_home/jobs/CI/workspace
+Fetching changes from the remote Git repository
+Checking out Revision ce91300954b183e3f277588e95fcb79372bc33f2 (origin/master)
+FATAL: Could not checkout null
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Could not checkout null
+	at org.jenkinsci.plugins.gitclient.JGitAPIImpl.checkout(JGitAPIImpl.java:202)
+	at org.jenkinsci.plugins.gitclient.JGitAPIImpl.checkoutBranch(JGitAPIImpl.java:239)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:870)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1412)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:652)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:88)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:557)
+	at hudson.model.Run.execute(Run.java:1679)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:230)
+Caused by: org.eclipse.jgit.api.errors.InvalidRefNameException: Branch name <null> is not allowed
+	at org.eclipse.jgit.api.CheckoutCommand.processOptions(CheckoutCommand.java:471)
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:200)
+	at org.jenkinsci.plugins.gitclient.JGitAPIImpl.checkout(JGitAPIImpl.java:187)
+	... 10 more

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction>
+      <build class="build" reference="../../.."/>
+    </hudson.triggers.SCMTrigger_-BuildAction>
+    <hudson.plugins.git.util.BuildData plugin="git@2.0">
+      <buildsByBranchName/>
+      <scmName></scmName>
+      <remoteUrls>
+        <string>https://pinireznik@bitbucket.org/pinireznik/dockerjavahelloworld.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+  </actions>
+  <number>48</number>
+  <startTime>1384272982179</startTime>
+  <result>FAILURE</result>
+  <duration>1667</duration>
+  <charset>US-ASCII</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/jobs/CI/workspace</workspace>
+  <hudsonVersion>1.538</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

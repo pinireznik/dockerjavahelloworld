@@ -1,0 +1,127 @@
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Started by an SCM change
+Building on master in workspace /var/jenkins_home/jobs/CI/workspace
+Fetching changes from the remote Git repository
+FATAL: Failed to fetch from https://pinireznik@bitbucket.org/pinireznik/dockerjavahelloworld.git
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Failed to fetch from https://pinireznik@bitbucket.org/pinireznik/dockerjavahelloworld.git
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:612)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:836)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:861)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1412)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:652)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:88)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:557)
+	at hudson.model.Run.execute(Run.java:1679)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:230)
+Caused by: hudson.plugins.git.GitException: org.eclipse.jgit.api.errors.TransportException: https://pinireznik@bitbucket.org/pinireznik/dockerjavahelloworld.git: cannot open git-upload-pack
+	at org.jenkinsci.plugins.gitclient.JGitAPIImpl.fetch(JGitAPIImpl.java:348)
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:610)
+	... 10 more
+Caused by: org.eclipse.jgit.api.errors.TransportException: https://pinireznik@bitbucket.org/pinireznik/dockerjavahelloworld.git: cannot open git-upload-pack
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:137)
+	at org.jenkinsci.plugins.gitclient.JGitAPIImpl.fetch(JGitAPIImpl.java:346)
+	... 11 more
+Caused by: org.eclipse.jgit.errors.TransportException: https://pinireznik@bitbucket.org/pinireznik/dockerjavahelloworld.git: cannot open git-upload-pack
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:499)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:308)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1108)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:128)
+	... 12 more
+Caused by: java.net.UnknownHostException: bitbucket.org
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:612)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:388)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:483)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:278)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:335)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:971)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1296)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:468)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:167)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:462)
+	... 17 more

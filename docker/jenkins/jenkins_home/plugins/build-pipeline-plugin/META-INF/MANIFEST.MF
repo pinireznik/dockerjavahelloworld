@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: tomakehurst
+Build-Jdk: 1.7.0_21
+Extension-Name: build-pipeline-plugin
+Specification-Title: This plugin provides build pipeline functionality
+  to Hudson and Jenkins.  This allows a chain of jobs to be visualised
+  in a new view.  Manual jobs in the pipeline can be triggered by a us
+ er with the appropriate permissions manually confirming.
+Implementation-Title: build-pipeline-plugin
+Implementation-Version: 1.4.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: build-pipeline-plugin
+Long-Name: Build Pipeline Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin
+Plugin-Version: 1.4.2
+Hudson-Version: 1.521
+Jenkins-Version: 1.521
+Plugin-Dependencies: dashboard-view:2.2;resolution:=optional,jquery:1.
+ 7.2-1,parameterized-trigger:2.17
+Plugin-Developers: Centrum Systems:centrum:plugins@centrumsystems.com.au
+
