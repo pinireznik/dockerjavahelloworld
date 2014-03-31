@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.uglyduckling.cdworkshop.HelloWorldTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec <<< FAILURE!
-test(com.uglyduckling.cdworkshop.HelloWorldTest)  Time elapsed: 0.012 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec <<< FAILURE!
+test(com.uglyduckling.cdworkshop.HelloWorldTest)  Time elapsed: 0.015 sec  <<< FAILURE!
 org.junit.ComparisonFailure: Output incorrect expected:<Hello Users[]!> but was:<Hello Users[ TEST]!>
 	at org.junit.Assert.assertEquals(Assert.java:123)
 	at com.uglyduckling.cdworkshop.HelloWorldTest.test(HelloWorldTest.java:11)

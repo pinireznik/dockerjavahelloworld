@@ -23,17 +23,19 @@ firefox
 ./adt..../eclipse/eclipse
 
 4. Start jenkins container and talk about ports and configuration in git
-docker run -d -p 8080 -v `pwd`/jenkins_home:/var/jenkins_home preznik/jenkins
-docker ps
-localhost:49153
+~/dev/dockerjavahelloworld/docker/jenkins
+./start.sh
+localhost:8080
 
-5. multi image build
 
 6. Show perl testing in multiple containers
-cd ~/bng-cwi
+cd ~/dev/bng-cwi
 ./test_Perl.sh
 
-
+7. django 
+cd /home/preznik/dev/django-helloworld
+./start.sh
+localhost:8000
 
 #Delete old containers
  sudo docker ps -a |grep Exit | awk '{print $1}' | xargs sudo docker rm

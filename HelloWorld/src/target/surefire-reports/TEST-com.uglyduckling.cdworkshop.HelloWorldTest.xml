@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="1" time="0.013" errors="0" skipped="0" tests="1" name="com.uglyduckling.cdworkshop.HelloWorldTest">
+<testsuite failures="1" time="0.016" errors="0" skipped="0" tests="1" name="com.uglyduckling.cdworkshop.HelloWorldTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/amd64"/>
@@ -58,7 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.012" classname="com.uglyduckling.cdworkshop.HelloWorldTest" name="test">
+  <testcase time="0.015" classname="com.uglyduckling.cdworkshop.HelloWorldTest" name="test">
     <failure message="Output incorrect expected:&lt;Hello Users[]!&gt; but was:&lt;Hello Users[ TEST]!&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: Output incorrect expected:&lt;Hello Users[]!&gt; but was:&lt;Hello Users[ TEST]!&gt;
 	at org.junit.Assert.assertEquals(Assert.java:123)
 	at com.uglyduckling.cdworkshop.HelloWorldTest.test(HelloWorldTest.java:11)

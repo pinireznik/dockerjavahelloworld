@@ -3,10 +3,10 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>1.533</version>
+        <version>1.535</version>
     </parent>
     <artifactId>matrix-auth</artifactId>
-    <version>1.0.2</version>
+    <version>1.1</version>
     <packaging>hpi</packaging>
     <name>Matrix Authorization Strategy Plugin</name>
     <description>Offers matrix-based security authorization strategies (global and per-project).</description>
