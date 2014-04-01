@@ -38,4 +38,4 @@ cd /home/preznik/dev/django-helloworld
 localhost:8000
 
 #Delete old containers
- sudo docker ps -a |grep Exit | awk '{print $1}' | xargs sudo docker rm
+docker ps -a |grep Exit | awk '{print $1}' | xargs docker rm

@@ -4,3 +4,7 @@
 *.jar
 *.war
 *.ear
+HelloWorld/src/target/
+HelloWorld/src/mvn-repo/
+docker/jenkins/jenkins_home/jobs/
+docker/jenkins/jenkins_home/plugins/
